@@ -1,3 +1,8 @@
+// Author: Perry Bush
+// Author Email: pyb24seven AT gmail D0T com
+// Version: 1.0
+// License: MIT 
+
 (function($) {
 
     $.fn.moreLess = function( options ) {
