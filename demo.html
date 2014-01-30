@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo - jQuery More Less</title>
+    <style type="text/css">
+    	body {
+			font-size: 20px;
+		}
+    	.inner-more-less {
+			opacity: 0;
+			display: none;
+		}
+		.more-less-click {
+			font-size: 18px;
+			cursor: pointer;
+			border-radius: 5px;
+			display: inline-block;
+		}
+		.demo-box {
+			padding: 20px;
+			background: rgb(204,204,255);
+			margin-bottom: 20px;
+			-moz-box-sizing: border-box;
+		}
+    </style>
+</head>
+
+<body>
+
+	<div id="more-less-list" class="demo-box">
+	    
+		<ul>
+	        <li>Oranges</li>
+	        <li>Apples</li>
+	        <li>Cherries</li>
+	        <li>Bananas</li>
+	        <li>Grapes</li>
+	    </ul>
+	
+	</div>
+	
+	
+	<div id="more-less-paragraph" class="demo-box">
+	    
+		<p>
+	        This is some text in a paragraph
+	    </p>
+	    
+	    <p>
+	        This is some text in a paragraph
+	    </p>
+	    
+	    <p>
+	        This is some text in a paragraph
+	    </p>	    
+	
+	</div>
+
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+<script src="jquery.more-less.js"></script>
+
+<!-- Plugin initialization -->
+<script>
+    $(document).ready(function () {
+        $("#more-less-list").moreLess({
+        	slideSpeed: '2000',        
+        	elementsToHide: 'li',        
+			summaryItems: 2
+		});
+		
+		$("#more-less-paragraph").moreLess({
+        	slideSpeed: '2000',         
+			summaryItems: 1
+		});				
+    });
+</script>
+
+</body>
+</html>
