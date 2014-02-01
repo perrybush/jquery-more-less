@@ -19,4 +19,4 @@ http://moreless.us
 
 ONLY tested with these browsers: Firefox 26.0, Chrome 32.0.1700.102 m, IE 11  
 
-jQery v1.11.0
+jQuery v1.11.0
